@@ -1,6 +1,6 @@
-# Project Title
+# Teramind opportunity
 
-Teramind opportunity test assignment
+Test assignment for Full Stack Software Engineer role
 
 ## Description
 
