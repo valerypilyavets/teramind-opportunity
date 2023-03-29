@@ -1,7 +1,6 @@
-import { UploadFilePayload } from './uploadInterfaces';
 import axios from 'axios';
 import { AxiosResponse } from 'axios';
 
-export async function fetchUploadFile(payload: UploadFilePayload): Promise<AxiosResponse> {
+export async function fetchUploadFile(payload: FormData): Promise<AxiosResponse> {
   return await axios.post('/files', payload);
 }

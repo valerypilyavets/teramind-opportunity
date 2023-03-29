@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { RootState } from '../../app/store';
 import { fetchUploadFile } from './uploadAPI';
-import { UploadState, UploadFilePayload } from "./uploadInterfaces";
+import { UploadState } from "./uploadInterfaces";
 import { FetchStatuses, File } from '../common/commonInterfaces';
 
 
@@ -12,7 +12,7 @@ const initialState: UploadState = {
 
 export const uploadFileThunk = createAsyncThunk(
   'upload/file',
-  async (payload: UploadFilePayload) => {
+  async (payload: FormData) => {
     const response = await fetchUploadFile(payload);
     return response.data as File;
   }

@@ -4,10 +4,6 @@ export interface UploadConfirmationProps {
   name: string;
 }
 
-export interface UploadFilePayload {
-
-}
-
 export interface UploadState {
   file: File | null;
   status: FetchStatuses;

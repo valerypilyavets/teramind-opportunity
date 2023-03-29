@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
 import {
   selectIsAuthorised,
@@ -6,8 +6,6 @@ import {
 import { Navigate } from 'react-router-dom';
 import { DropzoneArea } from 'react-mui-dropzone';
 import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
 
 import { selectFile, selectStatus, uploadFileThunk } from './uploadSlice';
 import { UploadConfirmation } from './components/UploadConfirmation';

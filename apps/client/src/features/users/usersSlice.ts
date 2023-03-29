@@ -3,7 +3,6 @@ import { RootState } from '../../app/store';
 import { FetchStatuses } from '../common/commonInterfaces';
 import { UsersState, User } from './usersInterfaces';
 import { fetchSelf } from './usersAPI';
-import Cookies from 'js-cookie';
 
 const initialState: UsersState = {
   user: null,
